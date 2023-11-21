@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+	<title>Image Example</title>
+</head>
+<body>
+
+</body>
+
+<script>
+let img;
+
+	function preload () {
+		img = loadImage ('the thing/obamacars.jpeg');
+	}
+	
+	function setup () {
+		createCanvas (400, 400);
+	}
+	
+	function draw () {
+		background(255);
+		if (img) {
+			image (img, 0, 0, width, height);
+			}
+	}
+</script>
